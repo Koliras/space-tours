@@ -4,6 +4,9 @@ import {
   createHashRouter,
   RouterProvider,
 } from "react-router-dom";
+import {
+  RecoilRoot,
+} from 'recoil';
 import './index.css'
 import Main from './routes/Main/Main.tsx'
 import Favorites from './routes/Favorites/Favorites.tsx';
@@ -28,6 +31,8 @@ const router = createHashRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RecoilRoot>
+      <RouterProvider router={router} />
+    </RecoilRoot>
   </React.StrictMode>,
 )
