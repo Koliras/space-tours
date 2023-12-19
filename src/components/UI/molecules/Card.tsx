@@ -1,6 +1,6 @@
 import { styled } from "styled-components"
 import { Trip, TripKey } from "../../../types/Trip";
-import { ImageToShow } from "../../../constants";
+import { ImageToShow } from "../../../utils/constants";
 import { Title } from "../atoms/Title";
 import { Description } from "../atoms/Description";
 import { Button } from "../atoms/Button";
@@ -8,7 +8,7 @@ import { ButtonIcon } from "../atoms/ButtonIcon";
 import { useLocation } from "react-router-dom";
 import { IconForButton } from "../../../types/IconForButton";
 import { useSetRecoilState } from "recoil";
-import { favoriteTours$ } from "../../../atoms";
+import { favoriteTours$ } from "../../../utils/atoms";
 
 const CardWrapper = styled.div`
   width: 411px;
