@@ -1,8 +1,8 @@
 import { styled } from "styled-components";
 
-export const ButtonIcon = styled.button<{ $iconType: string }>`
+export const ButtonIcon = styled.button<{ type: string }>`
   background-color: #ECECEC;
-  background-image: url(${props => `src/assets/${props.$iconType}.svg`});
+  background-image: url(${props => `src/assets/${props.type}.svg`});
   background-repeat: no-repeat;
   background-position: center;
   border: 0;
