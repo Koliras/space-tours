@@ -7,7 +7,7 @@ export const ButtonIcon = styled.button<{ type: string }>`
   background-position: center;
   border: 0;
   transition: background-color 300ms;
-  width: 53px;
+  min-width: 53px;
   height: 53px;
 
   &:hover {
@@ -16,6 +16,6 @@ export const ButtonIcon = styled.button<{ type: string }>`
   }
 
   &:active {
-    background-color: #DD377D;
+    background-color: #b0b0b0;
   }
 `;
