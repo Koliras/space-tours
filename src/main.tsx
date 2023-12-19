@@ -11,6 +11,12 @@ import './index.css'
 import Main from './routes/Main/Main.tsx'
 import Favorites from './routes/Favorites/Favorites.tsx';
 import Root from './routes/Root/Root.tsx';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+
+const client = new ApolloClient({
+  uri: 'https://spacex-production.up.railway.app/',
+  cache: new InMemoryCache(),
+});
 
 const router = createHashRouter([
   {
@@ -31,8 +37,10 @@ const router = createHashRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RecoilRoot>
-      <RouterProvider router={router} />
-    </RecoilRoot>
+    <ApolloProvider client={client}>
+      <RecoilRoot>
+        <RouterProvider router={router} />
+      </RecoilRoot>
+    </ApolloProvider>
   </React.StrictMode>,
 )
