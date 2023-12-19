@@ -6,5 +6,6 @@ export const Description = styled.p`
   text-align: center;
   font-family: Lato, sans-serif;
   font-size: 24px;
+  line-height: normal;
   font-weight: 300;
 `;

@@ -7,5 +7,6 @@ export const Title = styled.h6`
   font-family: Syne, sans-serif;
   font-size: 24px;
   font-weight: 700;
+  line-height: normal;
   text-transform: uppercase;
 `

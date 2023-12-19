@@ -5,6 +5,7 @@ import { MainHeading } from '../../components/UI/atoms/MainHeading';
 import { NavigationLink } from '../../components/UI/atoms/NavigationLink';
 import { SecondaryHeading } from '../../components/UI/atoms/SecondaryHeading';
 import { Title } from '../../components/UI/atoms/Title';
+import Card from '../../components/UI/molecules/Card';
 import './Main.css'
 
 function Main() {
@@ -13,9 +14,9 @@ function Main() {
       <p>Main page</p>
       <Button>Some button</Button>
       <br />
-      <ButtonIcon $iconType='like'/>
+      <ButtonIcon type='like'/>
       <br />
-      <ButtonIcon $iconType='delete'/>
+      <ButtonIcon type='delete'/>
       <Description>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, cumque. Esse voluptates, accusamus dolores ipsum vitae repuds consequuntur vitae eos, ea nihil modi illum ratione saepe, architecto deserunt repudiandae iste dolorum.
       </Description>
@@ -24,6 +25,11 @@ function Main() {
       <SecondaryHeading>Some other text</SecondaryHeading>
       <Title>Some title</Title>
       <NavigationLink>Some text</NavigationLink>
+      <Card trip={{
+        id: '',
+        name: 'Some random name',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, cumque. Esse voluptates, accusamusLorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, cumque. Esse voluptates, accusamusLorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, cumque. Esse voluptates, accusamusLorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, cumque. Esse voluptates, accusamus'
+      }} index={2}/>
     </>
   )
 }

@@ -5,6 +5,7 @@ export const Button = styled.button`
   border: 0;
   padding: 12px 0;
   transition: background-color 300ms;
+  width: 100%;
 
   font-family: Syne, sans-serif;
   text-align: center;

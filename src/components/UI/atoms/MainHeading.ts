@@ -7,5 +7,6 @@ export const MainHeading = styled.h1`
   font-family: Syne, sans-serif;
   font-size: 48px;
   font-weight: 800;
+  line-height: normal;
   text-transform: uppercase;
 `;

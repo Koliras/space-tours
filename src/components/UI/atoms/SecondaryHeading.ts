@@ -7,5 +7,6 @@ export const SecondaryHeading = styled.h2`
   font-family: Syne, sans-serif;
   font-size: 32px;
   font-weight: 800;
+  line-height: normal;
   text-transform: uppercase;
 `
