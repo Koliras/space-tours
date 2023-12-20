@@ -2,7 +2,6 @@ import { Button } from '../../components/UI/atoms/Button';
 import { ButtonIcon } from '../../components/UI/atoms/ButtonIcon';
 import { Description } from '../../components/UI/atoms/Description';
 import { MainHeading } from '../../components/UI/atoms/MainHeading';
-import { NavigationLink } from '../../components/UI/atoms/NavigationLink';
 import { SecondaryHeading } from '../../components/UI/atoms/SecondaryHeading';
 import { Title } from '../../components/UI/atoms/Title';
 import Card from '../../components/UI/molecules/Card';
@@ -24,7 +23,6 @@ function Main() {
       <MainHeading>Some Text</MainHeading>
       <SecondaryHeading>Some other text</SecondaryHeading>
       <Title>Some title</Title>
-      <NavigationLink>Some text</NavigationLink>
       <Card trip={{
         id: '',
         name: 'Some random name',

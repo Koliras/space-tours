@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 
 export const ButtonIcon = styled.button<{ type: string }>`
+  display: inline-block;
   background-color: #ECECEC;
   background-image: url(${props => `src/assets/${props.type}.svg`});
   background-repeat: no-repeat;
@@ -17,5 +18,9 @@ export const ButtonIcon = styled.button<{ type: string }>`
 
   &:active {
     background-color: #b0b0b0;
+  }
+
+  &.active {
+    background-color: #DD377D;
   }
 `;

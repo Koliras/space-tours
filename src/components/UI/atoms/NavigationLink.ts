@@ -1,6 +1,7 @@
+import { NavLink } from "react-router-dom";
 import { styled } from "styled-components";
 
-export const NavigationLink = styled.a`
+export const NavigationLink = styled(NavLink)`
   color: #FFF;
   position: relative;
   text-align: center;
@@ -9,6 +10,7 @@ export const NavigationLink = styled.a`
   font-weight: 400;
   text-transform: uppercase;
   transition: all 300ms;
+  text-decoration: none;
 
   &::after {
     content: '';
@@ -29,4 +31,8 @@ export const NavigationLink = styled.a`
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-`
+
+  &.active::after {
+    transform: scaleX(1) !important;
+  }
+`;
