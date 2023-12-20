@@ -1,11 +1,10 @@
-import { Outlet } from 'react-router-dom';
+import Header from '../../components/UI/molecules/Header';
 
 function Root() {
 
   return (
     <>
-      <p>Shared content</p>
-      <Outlet />
+      <Header />
     </>
   )
 }
