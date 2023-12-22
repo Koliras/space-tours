@@ -1,10 +1,21 @@
+import { styled } from "styled-components";
+import { Banner, BannerText, BannerWrapper } from "../../components/UI/atoms/Banner";
 import Card from "../../components/UI/molecules/Card";
 
-function Favorites() {
+const FavoritesBannerText = styled(BannerText)`
+  top: 50%;
+`
 
+function Favorites() {
   return (
     <>
-      <p>Favorites page</p>
+      <BannerWrapper>
+        <Banner src="public/Background_3.png" height={370}/>
+
+        <FavoritesBannerText>
+          Favorites
+        </FavoritesBannerText>
+      </BannerWrapper>
       <Card trip={{
         id: '',
         name: 'Some random name',

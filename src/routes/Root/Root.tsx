@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom';
 import Header from '../../components/UI/molecules/Header';
 
 function Root() {
@@ -5,6 +6,7 @@ function Root() {
   return (
     <>
       <Header />
+      <Outlet />
     </>
   )
 }

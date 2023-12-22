@@ -5,7 +5,7 @@ import { ButtonIcon } from "../atoms/ButtonIcon";
 import { Button } from "../atoms/Button";
 
 const HeaderWrapper = styled.div`
-  background: rgba(30, 30, 30, 0.48);
+  background: rgba(0, 0, 0, 0.4);
   height: 80px;
   position: fixed;
   top: 0;
@@ -16,11 +16,12 @@ const HeaderWrapper = styled.div`
   align-items: center;
   padding: 0 80px;
   box-sizing: border-box;
+  z-index: 5;
 `;
 
 const Logo = styled.img`
   width: 229px;
-  height: 42px;
+  height: 32px;
   display: block;
 `;
 
