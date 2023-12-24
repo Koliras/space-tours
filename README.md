@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+# Space Tours
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Test task for company SpdLoad.
+- [DEMO LINK](https://koliras.github.io/space-tours/#/)
+- [DESIGN](https://www.figma.com/file/ixNP25m54o6IUPKuOHU2vp/Design-for-React-test-task?node-id=2%3A973&mode=dev)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Site with two pages: main and favorites.
+On the main you can see the list of space tours.
+On the favorites you can see the list of space tours that you liked.
 
-## Expanding the ESLint configuration
+## Local development
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Installing
+* Fork and clone this repository
+* Run `npm install` in your terminal
+* Run `npm run dev`
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Technologies
+* TypeScript
+* React
+* React Apollo
+* Recoil
+* Styled Components
