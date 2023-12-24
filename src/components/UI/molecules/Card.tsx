@@ -60,7 +60,7 @@ export default function Card({ tour, index }: { tour: Tour, index: number }) {
 
   return (
     <CardWrapper>
-      <CardImage src={`public/${ImageToShow[keyOfImage]}`}/>
+      <CardImage src={`/${ImageToShow[keyOfImage]}`}/>
 
       <CardTextWrapper>
         <Title>

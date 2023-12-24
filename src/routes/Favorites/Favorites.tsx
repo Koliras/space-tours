@@ -37,7 +37,7 @@ function Favorites() {
   return (
     <>
       <BannerWrapper>
-        <Banner src="public/Background_3.png" height={370}/>
+        <Banner src="/Background_3.png" height={370}/>
 
         <FavoritesBannerText>
           Favorites
