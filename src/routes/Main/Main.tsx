@@ -74,9 +74,9 @@ function Main() {
           transitionDuration={500}
           arrows={false}
           > 
-          <Banner src='/Background_1.png' height={740}/>
-          <Banner src='/Background_2.png' height={740}/>
-          <Banner src='/Background_3.png' height={740}/>
+          <Banner src='./Background_1.png' height={740}/>
+          <Banner src='./Background_2.png' height={740}/>
+          <Banner src='./Background_3.png' height={740}/>
         </Carousel>
         <MainBannerText>
           The space is waiting for <BigText>you</BigText>
@@ -87,7 +87,7 @@ function Main() {
             Explore tours
           </ToursLink>
 
-          <img src="src\assets\arrowDown.svg" alt="Arrow down" width={20} height={25}/>
+          <img src="./assets/arrowDown.svg" alt="Arrow down" width={20} height={25}/>
         </ToursLinkWrapper>
       </BannerWrapper>
       

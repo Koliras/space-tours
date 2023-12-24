@@ -43,7 +43,7 @@ function Header() {
   return (
     <HeaderWrapper>
       <NavLink to="/">
-        <Logo src="/logo.png" alt="Logo" />
+        <Logo src="./logo.png" alt="Logo" />
       </NavLink>
 
       <NavigationWrapper>
