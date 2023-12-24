@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 export const ButtonIcon = styled.button<{ type: string }>`
   display: inline-block;
   background-color: #ECECEC;
-  background-image: url(${props => `/assets/${props.type}.svg`});
+  background-image: url(${props => `assets/${props.type}.svg`});
   background-repeat: no-repeat;
   background-position: center;
   border: 0;
