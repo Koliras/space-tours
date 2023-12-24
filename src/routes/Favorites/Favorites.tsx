@@ -16,7 +16,7 @@ function Favorites() {
           Favorites
         </FavoritesBannerText>
       </BannerWrapper>
-      <Card trip={{
+      <Card tour={{
         id: '',
         name: 'Some random name',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, cumque. Esse voluptates, accusamusLorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, cumque. Esse voluptates, accusamusLorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, cumque. Esse voluptates, accusamusLorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, cumque. Esse voluptates, accusamus'

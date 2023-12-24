@@ -1,5 +1,5 @@
 import { styled } from "styled-components"
-import { Trip, TripKey } from "../../../types/Trip";
+import { Tour, TourKey } from "../../../types/Tour";
 import { ImageToShow } from "../../../utils/constants";
 import { Title } from "../atoms/Title";
 import { Description } from "../atoms/Description";
@@ -8,7 +8,7 @@ import { ButtonIcon } from "../atoms/ButtonIcon";
 import { useLocation } from "react-router-dom";
 import { IconForButton } from "../../../types/IconForButton";
 import { useSetRecoilState } from "recoil";
-import { favoriteTours$ } from "../../../utils/atoms";
+import { favoriteToursIds$ } from "../../../utils/atoms";
 
 const CardWrapper = styled.div`
   width: 411px;
@@ -42,16 +42,16 @@ const ButtonsWrapper = styled.div`
   justify-content: space-between;
 `;
 
-export default function Card({ trip, index }: { trip: Trip, index: number }) {
-  const { id, name, description } = trip;
-  const keyOfImage = String(index % 3) as TripKey;
+export default function Card({ tour, index }: { tour: Tour, index: number }) {
+  const { id, name, description } = tour;
+  const keyOfImage = String(index % 3) as TourKey;
   const normalizedDescription = description.slice(0, 60) + '...';
   const iconType = useLocation().pathname === '/favorites' ? IconForButton.delete : IconForButton.like;
-  const setFavorites = useSetRecoilState(favoriteTours$);
+  const setFavorites = useSetRecoilState(favoriteToursIds$);
 
   const handleClick = () => {
     if (iconType === IconForButton.like) {
-      setFavorites((prev) => prev.filter((tripId) => tripId !== id));
+      setFavorites((prev) => prev.filter((tourid) => tourid !== id));
       return;
     }
 

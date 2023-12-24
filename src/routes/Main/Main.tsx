@@ -1,12 +1,11 @@
 import { styled } from 'styled-components';
 import { Banner, BannerText, BannerWrapper } from '../../components/UI/atoms/Banner';
-import { SecondaryHeading } from '../../components/UI/atoms/SecondaryHeading';
-import { Title } from '../../components/UI/atoms/Title';
-import Card from '../../components/UI/molecules/Card';
-import './Main.css'
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
 import { HashLink } from 'react-router-hash-link';
+import { PageContent } from '../../components/UI/atoms/PageContent';
+import ToursCarousel from '../../components/UI/molecules/ToursCarousel';
+import { SecondaryHeading } from '../../components/UI/atoms/SecondaryHeading';
 
 const BigText = styled.span`
   font-size: 310px;
@@ -15,6 +14,13 @@ const BigText = styled.span`
 
 const MainBannerText = styled(BannerText)`
   top: 28%;
+`;
+
+const HeadingWrapper = styled.div`
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  height: 44px;
 `;
 
 const ToursLink = styled.span`
@@ -84,15 +90,14 @@ function Main() {
           <img src="src\assets\arrowDown.svg" alt="Arrow down" width={20} height={25}/>
         </ToursLinkWrapper>
       </BannerWrapper>
-      <SecondaryHeading>Some other text</SecondaryHeading>
-      <Title>Some title</Title>
-      <div id="tours">
-        <Card trip={{
-          id: '',
-          name: 'Some random name',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, cumque. Esse voluptates, accusamusLorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, cumque. Esse voluptates, accusamusLorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, cumque. Esse voluptates, accusamusLorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, cumque. Esse voluptates, accusamus'
-        }} index={2}/>
-      </div>
+      
+      <PageContent id='tours'>
+        <HeadingWrapper>
+          <SecondaryHeading>Popular tours</SecondaryHeading>
+        </HeadingWrapper>
+
+        <ToursCarousel />
+      </PageContent>
     </>
   )
 }
