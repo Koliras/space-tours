@@ -181,7 +181,7 @@ this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names`):a
 `;const Iv=xe.button`
   display: inline-block;
   background-color: #ECECEC;
-  background-image: url(${e=>`/assets/${e.type}.svg`});
+  background-image: url(${e=>`assets/${e.type}.svg`});
   background-repeat: no-repeat;
   background-position: center;
   border: 0;
@@ -319,7 +319,7 @@ this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names`):a
   gap: 18px;
   left: 50%;
   transform: translate(-50%, 0);
-`;function v2(){const e={superLargeDesktop:{breakpoint:{max:4e3,min:3e3},items:1},desktop:{breakpoint:{max:3e3,min:1024},items:1},tablet:{breakpoint:{max:1024,min:464},items:1},mobile:{breakpoint:{max:464,min:0},items:1}};return G.jsxs(G.Fragment,{children:[G.jsxs(y_,{children:[G.jsxs(R_,{swipeable:!1,draggable:!1,responsive:e,infinite:!0,autoPlay:!0,autoPlaySpeed:3e3,transitionDuration:500,arrows:!1,children:[G.jsx(Il,{src:"./Background_1.png",height:740}),G.jsx(Il,{src:"./Background_2.png",height:740}),G.jsx(Il,{src:"./Background_3.png",height:740})]}),G.jsxs(f2,{children:["The space is waiting for ",G.jsx(c2,{children:"you"})]}),G.jsxs(p2,{smooth:!0,to:"#tours",children:[G.jsx(h2,{children:"Explore tours"}),G.jsx("img",{src:"/assets/arrowDown.svg",alt:"Arrow down",width:20,height:25})]})]}),G.jsxs(x_,{id:"tours",children:[G.jsx(d2,{children:G.jsx(xu,{children:"Popular tours"})}),G.jsx(u2,{})]})]})}const m2=xe(g_)`
+`;function v2(){const e={superLargeDesktop:{breakpoint:{max:4e3,min:3e3},items:1},desktop:{breakpoint:{max:3e3,min:1024},items:1},tablet:{breakpoint:{max:1024,min:464},items:1},mobile:{breakpoint:{max:464,min:0},items:1}};return G.jsxs(G.Fragment,{children:[G.jsxs(y_,{children:[G.jsxs(R_,{swipeable:!1,draggable:!1,responsive:e,infinite:!0,autoPlay:!0,autoPlaySpeed:3e3,transitionDuration:500,arrows:!1,children:[G.jsx(Il,{src:"./Background_1.png",height:740}),G.jsx(Il,{src:"./Background_2.png",height:740}),G.jsx(Il,{src:"./Background_3.png",height:740})]}),G.jsxs(f2,{children:["The space is waiting for ",G.jsx(c2,{children:"you"})]}),G.jsxs(p2,{smooth:!0,to:"#tours",children:[G.jsx(h2,{children:"Explore tours"}),G.jsx("img",{src:"assets/arrowDown.svg",alt:"Arrow down",width:20,height:25})]})]}),G.jsxs(x_,{id:"tours",children:[G.jsx(d2,{children:G.jsx(xu,{children:"Popular tours"})}),G.jsx(u2,{})]})]})}const m2=xe(g_)`
   top: 50%;
 `,y2=xe(Ib)`
   margin-bottom: 40px;
