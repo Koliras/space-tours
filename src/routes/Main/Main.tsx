@@ -87,7 +87,7 @@ function Main() {
             Explore tours
           </ToursLink>
 
-          <img src="./assets/arrowDown.svg" alt="Arrow down" width={20} height={25}/>
+          <img src="assets/arrowDown.svg" alt="Arrow down" width={20} height={25}/>
         </ToursLinkWrapper>
       </BannerWrapper>
       
