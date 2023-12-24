@@ -68,7 +68,7 @@ export default function ToursCarousel() {
           renderDotsOutside={true}
         >
           { tours.map((tour: Tour, index: number) => (
-            <Card tour={tour} index={index % 3} key={tour.id}/>
+            <Card tour={tour} index={index} key={tour.id}/>
             ))}
         </Carousel>
       </ToursCarouselContainer>

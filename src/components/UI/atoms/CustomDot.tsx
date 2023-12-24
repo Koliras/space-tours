@@ -1,9 +1,7 @@
 import { styled } from "styled-components";
 
 const DotWrapper = styled.li`
-  &:hover {
-    cursor: pointer;
-  }
+  cursor: pointer;
 `;
 
 export function CustomDot({ onClick, active }: any) {

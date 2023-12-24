@@ -50,15 +50,12 @@ export default function Card({ tour, index }: { tour: Tour, index: number }) {
   const setFavorites = useSetRecoilState(favoriteToursIds$);
 
   const handleClick = () => {
-    if (iconType === IconForButton.like) {
+    if (iconType === IconForButton.delete) {
       setFavorites((prev) => prev.filter((tourid) => tourid !== id));
       return;
     }
 
-    setFavorites(prev => {
-      prev.push(id)
-      return prev;
-    });
+    setFavorites(prev => prev.includes(id) ? prev : [...prev, id]);
   };
 
   return (
