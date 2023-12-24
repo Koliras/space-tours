@@ -278,7 +278,7 @@ this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names`):a
   gap: 16px;
   margin-inline: 32px;
   justify-content: space-between;
-`;function Fb({tour:e,index:t}){const{id:n,name:r,description:i}=e,o=String(t%3),a=i.slice(0,60)+"...",s=Do().pathname==="/favorites"?Bl.delete:Bl.like,l=II(Pb),u=()=>{if(s===Bl.delete){l(c=>c.filter(f=>f!==n));return}l(c=>c.includes(n)?c:[...c,n])};return G.jsxs(t2,{children:[G.jsx(n2,{src:`public/${ZV[o]}`}),G.jsxs(r2,{children:[G.jsx(e2,{children:r}),G.jsx(Ib,{children:a})]}),G.jsxs(i2,{children:[G.jsx(Lb,{children:"Buy"}),G.jsx(Iv,{type:s,onClick:u})]})]})}const xu=xe.h2`
+`;function Fb({tour:e,index:t}){const{id:n,name:r,description:i}=e,o=String(t%3),a=i.slice(0,60)+"...",s=Do().pathname==="/favorites"?Bl.delete:Bl.like,l=II(Pb),u=()=>{if(s===Bl.delete){l(c=>c.filter(f=>f!==n));return}l(c=>c.includes(n)?c:[...c,n])};return G.jsxs(t2,{children:[G.jsx(n2,{src:`/${ZV[o]}`}),G.jsxs(r2,{children:[G.jsx(e2,{children:r}),G.jsx(Ib,{children:a})]}),G.jsxs(i2,{children:[G.jsx(Lb,{children:"Buy"}),G.jsx(Iv,{type:s,onClick:u})]})]})}const xu=xe.h2`
   margin: 0;
   color: #1E1E1E;
   font-family: Syne, sans-serif;
@@ -319,7 +319,7 @@ this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names`):a
   gap: 18px;
   left: 50%;
   transform: translate(-50%, 0);
-`;function v2(){const e={superLargeDesktop:{breakpoint:{max:4e3,min:3e3},items:1},desktop:{breakpoint:{max:3e3,min:1024},items:1},tablet:{breakpoint:{max:1024,min:464},items:1},mobile:{breakpoint:{max:464,min:0},items:1}};return G.jsxs(G.Fragment,{children:[G.jsxs(y_,{children:[G.jsxs(R_,{swipeable:!1,draggable:!1,responsive:e,infinite:!0,autoPlay:!0,autoPlaySpeed:3e3,transitionDuration:500,arrows:!1,children:[G.jsx(Il,{src:"public/Background_1.png",height:740}),G.jsx(Il,{src:"public/Background_2.png",height:740}),G.jsx(Il,{src:"public/Background_3.png",height:740})]}),G.jsxs(f2,{children:["The space is waiting for ",G.jsx(c2,{children:"you"})]}),G.jsxs(p2,{smooth:!0,to:"#tours",children:[G.jsx(h2,{children:"Explore tours"}),G.jsx("img",{src:"src\\assets\\arrowDown.svg",alt:"Arrow down",width:20,height:25})]})]}),G.jsxs(x_,{id:"tours",children:[G.jsx(d2,{children:G.jsx(xu,{children:"Popular tours"})}),G.jsx(u2,{})]})]})}const m2=xe(g_)`
+`;function v2(){const e={superLargeDesktop:{breakpoint:{max:4e3,min:3e3},items:1},desktop:{breakpoint:{max:3e3,min:1024},items:1},tablet:{breakpoint:{max:1024,min:464},items:1},mobile:{breakpoint:{max:464,min:0},items:1}};return G.jsxs(G.Fragment,{children:[G.jsxs(y_,{children:[G.jsxs(R_,{swipeable:!1,draggable:!1,responsive:e,infinite:!0,autoPlay:!0,autoPlaySpeed:3e3,transitionDuration:500,arrows:!1,children:[G.jsx(Il,{src:"/Background_1.png",height:740}),G.jsx(Il,{src:"/Background_2.png",height:740}),G.jsx(Il,{src:"/Background_3.png",height:740})]}),G.jsxs(f2,{children:["The space is waiting for ",G.jsx(c2,{children:"you"})]}),G.jsxs(p2,{smooth:!0,to:"#tours",children:[G.jsx(h2,{children:"Explore tours"}),G.jsx("img",{src:"src\\assets\\arrowDown.svg",alt:"Arrow down",width:20,height:25})]})]}),G.jsxs(x_,{id:"tours",children:[G.jsx(d2,{children:G.jsx(xu,{children:"Popular tours"})}),G.jsx(u2,{})]})]})}const m2=xe(g_)`
   top: 50%;
 `,y2=xe(Ib)`
   margin-bottom: 40px;
@@ -330,7 +330,7 @@ this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names`):a
   display: grid;
   grid-template-columns: repeat(3, 411px);
   gap: 24px;
-`;function S2(){const[e,t]=YE(Pb),r=AI(Mb).filter(o=>e.includes(o.id)),i=()=>{t([])};return G.jsxs(G.Fragment,{children:[G.jsxs(y_,{children:[G.jsx(Il,{src:"public/Background_3.png",height:370}),G.jsx(m2,{children:"Favorites"})]}),G.jsx(x_,{children:r.length===0?G.jsx(xu,{children:"You don't have any favorite tours"}):G.jsxs(G.Fragment,{children:[G.jsx(y2,{onClick:i,children:"Clear all"}),G.jsx(g2,{children:r.map((o,a)=>G.jsx(Fb,{tour:o,index:a}))})]})})]})}const pl=xe(ts)`
+`;function S2(){const[e,t]=YE(Pb),r=AI(Mb).filter(o=>e.includes(o.id)),i=()=>{t([])};return G.jsxs(G.Fragment,{children:[G.jsxs(y_,{children:[G.jsx(Il,{src:"/Background_3.png",height:370}),G.jsx(m2,{children:"Favorites"})]}),G.jsx(x_,{children:r.length===0?G.jsx(xu,{children:"You don't have any favorite tours"}):G.jsxs(G.Fragment,{children:[G.jsx(y2,{onClick:i,children:"Clear all"}),G.jsx(g2,{children:r.map((o,a)=>G.jsx(Fb,{tour:o,index:a}))})]})})]})}const pl=xe(ts)`
   color: #FFF;
   position: relative;
   text-align: center;
@@ -387,4 +387,4 @@ this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names`):a
 `,b2=xe.div`
   display: flex;
   gap: 12px;
-`;function T2(){const e=t=>{t.preventDefault()};return G.jsxs(w2,{children:[G.jsx(ts,{to:"/",children:G.jsx(E2,{src:"public/logo.png",alt:"Logo"})}),G.jsxs(_2,{children:[G.jsx(pl,{to:"/",children:"Home"}),G.jsx(pl,{to:"disabledLink",onClick:e,children:"Tours"}),G.jsx(pl,{to:"disabledLink",onClick:e,children:"About"}),G.jsx(pl,{to:"disabledLink",onClick:e,children:"Help"})]}),G.jsxs(b2,{children:[G.jsx(Iv,{type:"like",as:ts,to:"favorites"}),G.jsx(Lb,{children:"Sing in"})]})]})}function R2(){return G.jsxs(G.Fragment,{children:[G.jsx(T2,{}),G.jsx(Sk,{})]})}const k2=new NV({uri:"https://spacex-production.up.railway.app/",cache:new bV}),C2=kk([{path:"/",element:G.jsx(R2,{}),children:[{path:"/",element:G.jsx(v2,{})},{path:"favorites",element:G.jsx(S2,{})}]}]);Uf.createRoot(document.getElementById("root")).render(G.jsx(Ce.StrictMode,{children:G.jsx(jV,{client:k2,children:G.jsx(DI,{children:G.jsx(Lk,{router:C2})})})}))});export default x2();
+`;function T2(){const e=t=>{t.preventDefault()};return G.jsxs(w2,{children:[G.jsx(ts,{to:"/",children:G.jsx(E2,{src:"/logo.png",alt:"Logo"})}),G.jsxs(_2,{children:[G.jsx(pl,{to:"/",children:"Home"}),G.jsx(pl,{to:"disabledLink",onClick:e,children:"Tours"}),G.jsx(pl,{to:"disabledLink",onClick:e,children:"About"}),G.jsx(pl,{to:"disabledLink",onClick:e,children:"Help"})]}),G.jsxs(b2,{children:[G.jsx(Iv,{type:"like",as:ts,to:"favorites"}),G.jsx(Lb,{children:"Sing in"})]})]})}function R2(){return G.jsxs(G.Fragment,{children:[G.jsx(T2,{}),G.jsx(Sk,{})]})}const k2=new NV({uri:"https://spacex-production.up.railway.app/",cache:new bV}),C2=kk([{path:"/",element:G.jsx(R2,{}),children:[{path:"/",element:G.jsx(v2,{})},{path:"favorites",element:G.jsx(S2,{})}]}]);Uf.createRoot(document.getElementById("root")).render(G.jsx(Ce.StrictMode,{children:G.jsx(jV,{client:k2,children:G.jsx(DI,{children:G.jsx(Lk,{router:C2})})})}))});export default x2();
